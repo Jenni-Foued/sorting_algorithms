@@ -26,9 +26,9 @@ size_t partition(int *array, size_t low, size_t high, size_t size)
 	{
 		if (array[j] < pivot)
 		{
+			i++;
 			if (i != j)
 			{
-				i++;
 				temp = array[i];
 				array[i] = array[j];
 				array[j] = temp;
